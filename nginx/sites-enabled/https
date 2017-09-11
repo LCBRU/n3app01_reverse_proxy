@@ -8,7 +8,7 @@ server {
     ssl_certificate_key /cert/uhlbriccsext.uhl-tr.nhs.uk.key;
 
     location / {
-        return 301 /redcap;
+        return 301 https://$host/redcap/;
     }
 
     location /redcap {
