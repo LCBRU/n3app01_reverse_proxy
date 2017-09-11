@@ -12,6 +12,10 @@ server {
     }
 
     location /redcap {
+        return 303 https://$host/redcap/;
+    }
+
+    location /redcap/ {
         proxy_pass http://10.156.253.175:82/redcap;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
