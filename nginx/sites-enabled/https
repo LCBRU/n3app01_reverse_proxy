@@ -4,7 +4,7 @@ server {
     listen 443;
     ssl on;
 
-    ssl_certificate /cert/uhlbriccsext_uhl-tr_nhs_uk.pem;
+    ssl_certificate /cert/uhlbriccsext.uhl-tr.nhs.uk.crt;
     ssl_certificate_key /cert/uhlbriccsext.uhl-tr.nhs.uk.key;
 
     location / {
